@@ -356,41 +356,45 @@
 
         <div class="Reservasi row align-items-center">
           <div class="col-12 md:col-4">
-            <label for="Nama" class="form-label mb-2">Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="nama"
-              placeholder="Full Name"
-            />
-            <label for="Nomor" class="form-label mb-2">Number gi(WhatsApp)</label>
-            <input
-              type="number"
-              class="form-control"
-              id="Nomor"
-              placeholder="Your Number"
-            />
-            <label for="Tanggal" class="form-label mb-2">Reservasi For</label>
-            <input
-              type="datetime-local"
-              class="form-control"
-              id="Tanggal"
-            />
-            <div class="form-field">
-              <label for="fieldTextarea" class="form-label ">Note</label>
-              <textarea
-                class="form-control  mb-5"
-                id="fieldTextarea"
-                rows="3"
-              ></textarea>
-            </div>
+            <form id="formReservasi">
+              <label for="Nama" class="form-label mb-1">Name</label>
+              <input
+                type="text"
+                class="form-control mb-4"
+                id="nama"
+                placeholder="Full Name"
+              />
+              <label for="Nomor" class="form-label mb-1"
+                >WhatsApp Number</label
+              >
+              <input
+                type="number"
+                class="form-control mb-4"
+                id="Nomor"
+                placeholder="Your Number"
+              />
+              <label for="Tanggal" class="form-label mb-1">Reservasi For</label>
+              <input 
+              type="datetime-local" 
+              class="form-control mb-4" 
+              id="Tanggal" 
+              />
+              <div class="form-field">
+                <label for="fieldTextarea" class="form-label">Note</label>
+                <textarea
+                  class="form-control mb-5"
+                  id="fieldTextarea"
+                  rows="3"
+                ></textarea>
+              </div>
 
-            <button type="reset" class="button1 btn-solid hover-lift w-100">
-              Find Your Matcha
-            </button>
+              <button type="reset" class="button1 btn-solid hover-lift w-100">
+                Find Your Matcha
+              </button>
+            </form>
           </div>
 
-          <div class="col-12 md:col-8  mt-5">
+          <div class="col-12 md:col-8 mt-5">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15811.552878574648!2d110.36274367112141!3d-7.801657400315514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a579ceebe1279%3A0x7808ad25aa525803!2sSMK%20SMTI%20Yogyakarta!5e0!3m2!1sid!2sid!4v1792051064747!5m2!1sid!2sid"
               height="450"
