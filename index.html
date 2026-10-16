@@ -34,6 +34,17 @@
         color: #f5f0e5;
         text-align: justify;
       }
+      .button1,
+      .button2 {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+      }
+      .button1:hover,
+      .button2:hover {
+        color: inherit;
+      }
       .button1 {
         background-color: #063b00;
         color: #f5f0e5;
@@ -44,10 +55,6 @@
       }
       .Pilih {
         background-color: #f5f0e5;
-      }
-      .card-body {
-        background-color: #a8b89a;
-        padding: 30px;
       }
       .kecil {
         color: #557738;
@@ -67,7 +74,7 @@
         color: #f5f0e5;
         background-color: #063b00;
         padding-top: 50px;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
       }
       .Foot {
         background-color: #a8b89a;
@@ -80,7 +87,10 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar sm:navbar-expand fg-2 py-4px fixed-top" data-bs-theme="dark">
+    <nav
+      class="navbar sm:navbar-expand fg-2 py-4px fixed-top"
+      data-bs-theme="dark"
+    >
       <div class="container-fluid fg-white fw-bold">
         <img src="img/LOGO.png" alt="" width="80px" />KARIRA <br />
         CAFFEE
@@ -136,7 +146,7 @@
           </div>
         </dialog>
       </div>
-    </nav> 
+    </nav>
 
     <!-- Section Hero -->
     <section id="Home" class="Hero row align-items-center">
@@ -147,7 +157,7 @@
         <h5 class="text-hero font-body fs-md fw-bold mb-4">
           A Little Matcha, A Lot of Happiness.
         </h5>
-        <p class=" text-hero font-monospace fs-sm">
+        <p class="text-hero font-monospace fs-sm">
           Selamat datang di Karira Caffee, setiap tegukan matcha menghadirkan
           ketenangan, kehangatan, dan kebahagiaan. Rasa matcha yang creamy,
           aroma yang menenangkan, dan suasana nyaman yang membuat setiap momen
@@ -158,12 +168,14 @@
           Karira Caffee — Sip the Green, Feel the Calm. <br />Your little green
           escape starts here. 🌿
         </p>
-        <button type="button" class="button1 btn-solid hover-lift">
+
+        <a href="#Menu" class="button1 btn-solid hover-lift">
           Find Your Matcha
-        </button>
-        <button type="button" class="button2 btn-outline hover-lift">
+        </a>
+
+        <a href="#Order" class="button2 btn-outline hover-lift">
           Sip It Now ♡
-        </button>
+        </a>
       </div>
       <div class="col-12 md:col-6 text-center align-middle g-10">
         <img src="img/Cafee 1.jpg" alt="" width="100%" />
@@ -178,7 +190,7 @@
           <h1>A Little Story Behind Our Matcha 🍵</h1>
         </div>
         <div class="row justify-content-center">
-          <div class="col-6 pb-12">
+          <div class="col-8 pb-12">
             Kami percaya bahwa kebahagiaan bisa ditemukan dari hal-hal
             sederhana. Terinspirasi dari ketenangan dan keunikan matcha, kami
             ingin menghadirkan ruang kecil untuk menikmati setiap momen dengan
@@ -358,28 +370,27 @@
               id="Nomor"
               placeholder="Your Number"
             />
-            <label for="Orang" class="form-label mb-2">Number of Items</label>
-            <input
-              type="number"
-              class="form-control"
-              id="Orang"
-              min="1"
-              max="99"
-              value="1"
-            />
             <label for="Tanggal" class="form-label mb-2">Reservasi For</label>
             <input
               type="datetime-local"
-              class="form-control mb-5"
+              class="form-control"
               id="Tanggal"
             />
+            <div class="form-field">
+              <label for="fieldTextarea" class="form-label ">Note</label>
+              <textarea
+                class="form-control  mb-5"
+                id="fieldTextarea"
+                rows="3"
+              ></textarea>
+            </div>
 
             <button type="reset" class="button1 btn-solid hover-lift w-100">
               Find Your Matcha
             </button>
           </div>
 
-          <div class="col-12 md:col-8">
+          <div class="col-12 md:col-8  mt-5">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15811.552878574648!2d110.36274367112141!3d-7.801657400315514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a579ceebe1279%3A0x7808ad25aa525803!2sSMK%20SMTI%20Yogyakarta!5e0!3m2!1sid!2sid!4v1792051064747!5m2!1sid!2sid"
               height="450"
